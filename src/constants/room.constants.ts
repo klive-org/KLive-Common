@@ -1,0 +1,10 @@
+export const ROOM_FOR_VIEW_ALL_CONVERSATIONS = "ALL_CONVERSATIONS";
+
+export const ROOM_SYSTEM_AGENTS_ONLINE = "SYSTEM:agents-online";
+export const ROOM_SYSTEM_MONITORING = "SYSTEM:monitoring";
+
+// Room prefixes
+export const ROOM_PREFIX_AGENT = "AGENT:";
+export const ROOM_PREFIX_CONVERSATION = "CONVERSATION:";
+export const ROOM_PREFIX_VISITOR = "VISITOR:";
+export const ROOM_PREFIX_SYSTEM = "SYSTEM:";

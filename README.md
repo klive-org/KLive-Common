@@ -13,7 +13,7 @@ Thêm package vào `package.json` của FE hoặc BE:
 ```json
 {
   "dependencies": {
-    "@klive/shared": "github:klive-org/KLive-Common#v0.1.1"
+    "@klive/common": "github:klive-org/KLive-Common#v0.1.1"
   }
 }
 ```
@@ -21,7 +21,7 @@ Thêm package vào `package.json` của FE hoặc BE:
 Hoặc sử dụng pnpm:
 
 ```bash
-pnpm add @klive/shared@github:klive-org/KLive-Common#v0.1.1
+pnpm add @klive/common@github:klive-org/KLive-Common#v0.1.1
 ```
 
 **Lưu ý:** Thay `v0.1.1` bằng tag version mới nhất. Xem tất cả tags tại: https://github.com/klive-org/KLive-Common/tags
@@ -33,7 +33,7 @@ Chỉ dùng khi cần test code chưa được tag:
 ```json
 {
   "dependencies": {
-    "@klive/shared": "github:klive-org/KLive-Common#main"
+    "@klive/common": "github:klive-org/KLive-Common#main"
   }
 }
 ```
@@ -57,7 +57,7 @@ Thay đổi URL trong `package.json` (sử dụng tag):
 ```json
 {
   "dependencies": {
-    "@klive/shared": "git+ssh://git@github.com/klive-org/KLive-Common.git#v0.1.1"
+    "@klive/common": "git+ssh://git@github.com/klive-org/KLive-Common.git#v0.1.1"
   }
 }
 ```
@@ -110,12 +110,12 @@ Sau khi cài đặt, import trong code:
 
 ```typescript
 // Import tất cả
-import { SomeEnum, SomeConstant, someUtil } from "@klive/shared";
+import { SomeEnum, SomeConstant, someUtil } from "@klive/common";
 
 // Hoặc import riêng lẻ
-import { SomeEnum } from "@klive/shared/enums";
-import { SomeConstant } from "@klive/shared/constants";
-import { someUtil } from "@klive/shared/utils";
+import { SomeEnum } from "@klive/common/enums";
+import { SomeConstant } from "@klive/common/constants";
+import { someUtil } from "@klive/common/utils";
 ```
 
 ## Thêm nội dung mới
@@ -184,7 +184,7 @@ Khi có version mới, cập nhật tag trong `package.json` của FE/BE:
 ```json
 {
   "dependencies": {
-    "@klive/shared": "github:klive-org/KLive-Common#v0.1.2"
+    "@klive/common": "github:klive-org/KLive-Common#v0.1.2"
   }
 }
 ```
