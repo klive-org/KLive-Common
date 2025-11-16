@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ROOM_PREFIX_SYSTEM = exports.ROOM_PREFIX_VISITOR = exports.ROOM_PREFIX_CONVERSATION = exports.ROOM_PREFIX_AGENT = exports.ROOM_SYSTEM_MONITORING = exports.ROOM_SYSTEM_AGENTS_ONLINE = exports.ROOM_FOR_VIEW_ALL_CONVERSATIONS = void 0;
+exports.ROOM_FOR_VIEW_ALL_CONVERSATIONS = "ALL_CONVERSATIONS";
+exports.ROOM_SYSTEM_AGENTS_ONLINE = "SYSTEM:agents-online";
+exports.ROOM_SYSTEM_MONITORING = "SYSTEM:monitoring";
+// Room prefixes
+exports.ROOM_PREFIX_AGENT = "AGENT:";
+exports.ROOM_PREFIX_CONVERSATION = "CONVERSATION:";
+exports.ROOM_PREFIX_VISITOR = "VISITOR:";
+exports.ROOM_PREFIX_SYSTEM = "SYSTEM:";
