@@ -92,6 +92,17 @@ jobs:
             "
           fi
 
+      - name: Build with new version
+        if: steps.bump.outputs.skip != 'true'
+        run: |
+          echo "Building package with new version ${{ steps.bump.outputs.new_version }}"
+          pnpm build
+          if [ ! -d "dist" ]; then
+            echo "Build failed: dist directory not found"
+            exit 1
+          fi
+          echo "Build successful with new version"
+
       - name: Commit version bump
         if: steps.bump.outputs.skip != 'true'
         run: |
