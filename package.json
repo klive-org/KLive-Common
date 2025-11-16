@@ -1,0 +1,36 @@
+{
+  "name": "@klive/common",
+  "version": "0.0.2",
+  "description": "Shared utilities, enums, and constants for KLive FE and BE",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "prepublishOnly": "pnpm run clean && pnpm run build"
+  },
+  "keywords": [
+    "klive",
+    "shared",
+    "utils",
+    "enums",
+    "constants"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "packageManager": "pnpm@10.21.0",
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.2"
+  },
+  "peerDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
