@@ -54,6 +54,20 @@ jobs:
           echo "Build successful: dist directory created"
           ls -la dist
 
+      - name: Commit dist if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add dist/
+
+          # Only commit if there are changes in dist
+          if git diff --staged --quiet; then
+            echo "No changes in dist to commit"
+          else
+            git commit -m "chore: update dist [skip ci]"
+            git push origin main
+          fi
+
       - name: Read current version
         id: version
         run: |
@@ -103,18 +117,18 @@ jobs:
           fi
           echo "Build successful with new version"
 
-      - name: Commit version bump
+      - name: Commit version bump and dist
         if: steps.bump.outputs.skip != 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add package.json
+          git add package.json dist/
 
           # Only commit if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "[version] Bump version to ${{ steps.bump.outputs.new_version }}"
+            git commit -m "[version] Bump version to ${{ steps.bump.outputs.new_version }} [skip ci]"
             git push origin main
           fi
 
