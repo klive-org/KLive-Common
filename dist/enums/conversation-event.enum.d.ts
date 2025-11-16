@@ -14,5 +14,6 @@ export declare enum ES2CConversationEvent {
     RECV_CONVERSATION_ENINVITED = "s2c:recv-conversation-eninvited",
     RECV_CONVERSATION_DEINVITED = "s2c:recv-conversation-deinvited",
     RECV_CONVERSATION_ERROR = "s2c:recv-conversation-error",
-    RECV_BADGE_COUNT = "s2c:recv-badge-count"
+    RECV_BADGE_COUNT = "s2c:recv-badge-count",
+    RECV_ROOMS_LIST = "s2c:recv-rooms-list"
 }
