@@ -4,14 +4,16 @@ Package chứa các utilities, enums, và constants dùng chung giữa Frontend 
 
 ## Cài đặt
 
-### Cài đặt từ GitHub Private Repository
+### Cài đặt từ GitHub Private Repository (Qua Tag)
+
+Package tự động tăng version và tạo tag mỗi khi có push. Cài đặt bằng cách chỉ định tag version:
 
 Thêm package vào `package.json` của FE hoặc BE:
 
 ```json
 {
   "dependencies": {
-    "@klive/shared": "github:YOUR_GITHUB_USERNAME/KLive-Shared#main"
+    "@klive/shared": "github:klive-org/KLive-Common#v0.1.1"
   }
 }
 ```
@@ -19,7 +21,21 @@ Thêm package vào `package.json` của FE hoặc BE:
 Hoặc sử dụng pnpm:
 
 ```bash
-pnpm add @klive/shared@github:YOUR_GITHUB_USERNAME/KLive-Shared#main
+pnpm add @klive/shared@github:klive-org/KLive-Common#v0.1.1
+```
+
+**Lưu ý:** Thay `v0.1.1` bằng tag version mới nhất. Xem tất cả tags tại: https://github.com/klive-org/KLive-Common/tags
+
+### Cài đặt từ Branch (Development - Không khuyến nghị)
+
+Chỉ dùng khi cần test code chưa được tag:
+
+```json
+{
+  "dependencies": {
+    "@klive/shared": "github:klive-org/KLive-Common#main"
+  }
+}
 ```
 
 ### Cấu hình Authentication cho GitHub Private Repo
@@ -36,12 +52,12 @@ pnpm add @klive/shared@github:YOUR_GITHUB_USERNAME/KLive-Shared#main
 
 #### Option 2: Sử dụng SSH (khuyến nghị)
 
-Thay đổi URL trong `package.json`:
+Thay đổi URL trong `package.json` (sử dụng tag):
 
 ```json
 {
   "dependencies": {
-    "@klive/shared": "git+ssh://git@github.com/YOUR_GITHUB_USERNAME/KLive-Shared.git#main"
+    "@klive/shared": "git+ssh://git@github.com/klive-org/KLive-Common.git#v0.1.1"
   }
 }
 ```
@@ -153,7 +169,39 @@ export * from "./string.utils";
 
 ## Versioning
 
-Khi có thay đổi, cập nhật version trong `package.json` và commit. FE/BE cần cập nhật version trong `package.json` để nhận thay đổi mới.
+### Auto Versioning
+
+Package tự động tăng version (patch) và tạo tag mỗi khi có push vào branch `main`:
+
+- Version được tăng tự động: `0.1.0` → `0.1.1` → `0.1.2` ...
+- Tag được tạo tự động: `v0.1.0`, `v0.1.1`, `v0.1.2` ...
+- Workflow được trigger bởi GitHub Actions
+
+### Cập nhật Version trong FE/BE
+
+Khi có version mới, cập nhật tag trong `package.json` của FE/BE:
+
+```json
+{
+  "dependencies": {
+    "@klive/shared": "github:klive-org/KLive-Common#v0.1.2"
+  }
+}
+```
+
+Sau đó chạy:
+
+```bash
+pnpm install
+```
+
+### Skip Auto Versioning
+
+Nếu muốn skip auto versioning cho một commit cụ thể, thêm `[skip ci]` vào commit message:
+
+```bash
+git commit -m "[skip ci] Update documentation"
+```
 
 ## Lưu ý
 
