@@ -1,6 +1,8 @@
 export declare enum EC2SConversationEvent {
     CONVERSATION_JOIN_ROOM = "c2s:conversation-join-room",
-    CONVERSATION_LEAVE_ROOM = "c2s:conversation-leave-room"
+    CONVERSATION_LEAVE_ROOM = "c2s:conversation-leave-room",
+    JOIN_ALL_CONVERSATIONS_ROOM = "c2s:join-all-conversations-room",
+    LEAVE_ALL_CONVERSATIONS_ROOM = "c2s:leave-all-conversations-room"
 }
 export declare enum ES2CConversationEvent {
     RECV_CONVERSATION_CREATED = "s2c:recv-conversation-created",
