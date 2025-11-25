@@ -1,0 +1,22 @@
+export enum ConversationLogAction {
+  //   CREATE_NEW_CONVERSATION = "create-new-conversation",
+  //   RESTART_CONVERSATION = "restart-conversation",
+  //   MANUAL_ASSIGN = "manual-assign",
+  //   FORCE_ASSIGN = "force-assign",
+  //   AUTO_ASSIGN = "auto-assign",
+  //   MISS_CONVERSATION = "miss-conversation",
+  //   END_CONVERSATION = "end-conversation",
+  //   END_CONVERSATION_FOR_VISITOR = "end-conversation-for-visitor",
+  //   CLOSE_CONVERSATION = "close-conversation",
+  //   TRANSFER_CONVERSATION = "transfer-conversation",
+  //
+  CONVERSATION_CREATED = "conversation-created",
+  CONVERSATION_RESTARTED = "conversation-restarted",
+  CONVERSATION_MANUALLY_ASSIGNED = "conversation-manually-assigned",
+  CONVERSATION_AUTO_ASSIGNED = "conversation-auto-assigned",
+  CONVERSATION_MISSED = "conversation-missed",
+  CONVERSATION_ENDED_BY_AGENT = "conversation-ended-by-agent",
+  CONVERSATION_ENDED_BY_VISITOR = "conversation-ended-by-visitor",
+  CONVERSATION_CLOSED_AUTOMATICALLY = "conversation-closed-automatically",
+  CONVERSATION_TRANSFERRED_TO_OTHER_AGENT = "conversation-transferred-to-other-agent",
+}
