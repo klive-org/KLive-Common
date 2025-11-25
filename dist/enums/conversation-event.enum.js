@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.ES2CConversationEvent = exports.EC2SConversationEvent = void 0;
 var EC2SConversationEvent;
 (function (EC2SConversationEvent) {
+    EC2SConversationEvent["CONVERSATION_BUMP_READ"] = "c2s:conversation-bump-read";
     EC2SConversationEvent["CONVERSATION_JOIN_ROOM"] = "c2s:conversation-join-room";
     EC2SConversationEvent["CONVERSATION_LEAVE_ROOM"] = "c2s:conversation-leave-room";
     EC2SConversationEvent["JOIN_ALL_CONVERSATIONS_ROOM"] = "c2s:join-all-conversations-room";

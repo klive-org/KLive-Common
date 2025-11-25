@@ -1,4 +1,5 @@
 export declare enum EC2SConversationEvent {
+    CONVERSATION_BUMP_READ = "c2s:conversation-bump-read",
     CONVERSATION_JOIN_ROOM = "c2s:conversation-join-room",
     CONVERSATION_LEAVE_ROOM = "c2s:conversation-leave-room",
     JOIN_ALL_CONVERSATIONS_ROOM = "c2s:join-all-conversations-room",
