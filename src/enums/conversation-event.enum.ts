@@ -9,6 +9,7 @@ export enum ES2CConversationEvent {
   RECV_CONVERSATION_CREATED = "s2c:recv-conversation-created",
   RECV_CONVERSATION_UPDATED = "s2c:recv-conversation-updated",
   RECV_CONVERSATION_ASSIGNED = "s2c:recv-conversation-assigned",
+  RECV_CONVERSATION_UNASSIGN = "s2c:recv-conversation-unassign",
   RECV_CONVERSATION_JOIN = "s2c:recv-conversation-join",
   RECV_CONVERSATION_LEAVE = "s2c:recv-conversation-leave",
   RECV_CONVERSATION_CLOSE = "s2c:recv-conversation-close",
