@@ -14,6 +14,7 @@ var ES2CConversationEvent;
     ES2CConversationEvent["RECV_CONVERSATION_CREATED"] = "s2c:recv-conversation-created";
     ES2CConversationEvent["RECV_CONVERSATION_UPDATED"] = "s2c:recv-conversation-updated";
     ES2CConversationEvent["RECV_CONVERSATION_ASSIGNED"] = "s2c:recv-conversation-assigned";
+    ES2CConversationEvent["RECV_CONVERSATION_UNASSIGN"] = "s2c:recv-conversation-unassign";
     ES2CConversationEvent["RECV_CONVERSATION_JOIN"] = "s2c:recv-conversation-join";
     ES2CConversationEvent["RECV_CONVERSATION_LEAVE"] = "s2c:recv-conversation-leave";
     ES2CConversationEvent["RECV_CONVERSATION_CLOSE"] = "s2c:recv-conversation-close";
