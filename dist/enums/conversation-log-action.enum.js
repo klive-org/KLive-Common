@@ -15,4 +15,5 @@ var ConversationLogAction;
     ConversationLogAction["CONVERSATION_TRANSFERRED_TO_OTHER_AGENT"] = "conversation-transferred-to-other-agent";
     ConversationLogAction["CONVERSATION_AGENT_JOIN_ROOM"] = "conversation-agent-join-room";
     ConversationLogAction["CONVERSATION_AGENT_LEAVE_ROOM"] = "conversation-agent-leave-room";
+    ConversationLogAction["CONVERSATION_AGENT_OBSERVE_CONVERSATION"] = "conversation-agent-observe-conversation";
 })(ConversationLogAction || (exports.ConversationLogAction = ConversationLogAction = {}));
