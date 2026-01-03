@@ -1,5 +1,5 @@
 export declare enum ES2CWSEvent {
     WS_ERROR_RESPONSE = "s2c:ws-error-response",
-    RECV_ONLINE_ID = "s2c:recv-online-id",
-    RECV_OFFLINE_ID = "s2c:recv-offline-id"
+    RECV_USER_STATUS_CHANGED = "s2c:recv-user-status-changed",
+    RECV_USER_OFFLINE = "s2c:recv-user-offline"
 }
