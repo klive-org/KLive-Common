@@ -20,3 +20,4 @@ __exportStar(require("./form-submission-status.enum"), exports);
 __exportStar(require("./message-event.enum"), exports);
 __exportStar(require("./telegram-schedule.enum"), exports);
 __exportStar(require("./ws-event.enum"), exports);
+__exportStar(require("./agent-type.enum"), exports);
