@@ -17,4 +17,5 @@ var ES2CMessageEvent;
     ES2CMessageEvent["RECV_TYPING_STOP"] = "s2c:recv-typing-stop";
     ES2CMessageEvent["RECV_LAST_READ_OF_CONVERSATION"] = "s2c:recv-last-read-of-conversation";
     ES2CMessageEvent["RECV_MESSAGE_READ"] = "s2c:recv-message-read";
+    ES2CMessageEvent["RECV_MESSAGE_ERROR"] = "s2c:recv-message-error";
 })(ES2CMessageEvent || (exports.ES2CMessageEvent = ES2CMessageEvent = {}));

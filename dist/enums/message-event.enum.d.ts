@@ -11,5 +11,6 @@ export declare enum ES2CMessageEvent {
     RECV_TYPING_START = "s2c:recv-typing-start",
     RECV_TYPING_STOP = "s2c:recv-typing-stop",
     RECV_LAST_READ_OF_CONVERSATION = "s2c:recv-last-read-of-conversation",
-    RECV_MESSAGE_READ = "s2c:recv-message-read"
+    RECV_MESSAGE_READ = "s2c:recv-message-read",
+    RECV_MESSAGE_ERROR = "s2c:recv-message-error"
 }
