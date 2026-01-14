@@ -14,5 +14,5 @@ export enum ES2CMessageEvent {
 
   RECV_LAST_READ_OF_CONVERSATION = "s2c:recv-last-read-of-conversation",
   RECV_MESSAGE_READ = "s2c:recv-message-read",
+  RECV_MESSAGE_ERROR = "s2c:recv-message-error",
 }
-
