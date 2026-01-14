@@ -18,6 +18,7 @@ __exportStar(require("./conversation-event.enum"), exports);
 __exportStar(require("./conversation-log-action.enum"), exports);
 __exportStar(require("./form-submission-status.enum"), exports);
 __exportStar(require("./message-event.enum"), exports);
+__exportStar(require("./message-status.enum"), exports);
 __exportStar(require("./telegram-schedule.enum"), exports);
 __exportStar(require("./ws-event.enum"), exports);
 __exportStar(require("./agent-type.enum"), exports);
