@@ -8,6 +8,7 @@ var EC2SConversationEvent;
     EC2SConversationEvent["CONVERSATION_LEAVE_ROOM"] = "c2s:conversation-leave-room";
     EC2SConversationEvent["JOIN_ALL_CONVERSATIONS_ROOM"] = "c2s:join-all-conversations-room";
     EC2SConversationEvent["LEAVE_ALL_CONVERSATIONS_ROOM"] = "c2s:leave-all-conversations-room";
+    EC2SConversationEvent["CONVERSATION_GET_META"] = "c2s:conversation-get-meta";
 })(EC2SConversationEvent || (exports.EC2SConversationEvent = EC2SConversationEvent = {}));
 var ES2CConversationEvent;
 (function (ES2CConversationEvent) {
@@ -26,4 +27,5 @@ var ES2CConversationEvent;
     ES2CConversationEvent["RECV_BADGE_COUNT"] = "s2c:recv-badge-count";
     ES2CConversationEvent["RECV_ROOMS_LIST"] = "s2c:recv-rooms-list";
     ES2CConversationEvent["RECV_USER_CONVERSATION_COUNT_UPDATED"] = "s2c:recv-user-conversation-count-updated";
+    ES2CConversationEvent["RECV_CONVERSATION_META"] = "s2c:recv-conversation-meta";
 })(ES2CConversationEvent || (exports.ES2CConversationEvent = ES2CConversationEvent = {}));
