@@ -4,6 +4,7 @@ export enum EC2SConversationEvent {
   CONVERSATION_LEAVE_ROOM = "c2s:conversation-leave-room",
   JOIN_ALL_CONVERSATIONS_ROOM = "c2s:join-all-conversations-room",
   LEAVE_ALL_CONVERSATIONS_ROOM = "c2s:leave-all-conversations-room",
+  CONVERSATION_GET_META = "c2s:conversation-get-meta",
 }
 export enum ES2CConversationEvent {
   RECV_CONVERSATION_CREATED = "s2c:recv-conversation-created",
@@ -21,4 +22,5 @@ export enum ES2CConversationEvent {
   RECV_BADGE_COUNT = "s2c:recv-badge-count",
   RECV_ROOMS_LIST = "s2c:recv-rooms-list",
   RECV_USER_CONVERSATION_COUNT_UPDATED = "s2c:recv-user-conversation-count-updated",
+  RECV_CONVERSATION_META = "s2c:recv-conversation-meta",
 }
