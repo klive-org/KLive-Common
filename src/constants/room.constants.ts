@@ -6,5 +6,4 @@ export const ROOM_SYSTEM_MONITORING = "SYSTEM:monitoring";
 // Room prefixes
 export const ROOM_PREFIX_AGENT = "AGENT:";
 export const ROOM_PREFIX_CONVERSATION = "CONVERSATION:";
-export const ROOM_PREFIX_VISITOR = "VISITOR:";
 export const ROOM_PREFIX_SYSTEM = "SYSTEM:";
