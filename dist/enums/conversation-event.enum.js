@@ -28,4 +28,5 @@ var ES2CConversationEvent;
     ES2CConversationEvent["RECV_ROOMS_LIST"] = "s2c:recv-rooms-list";
     ES2CConversationEvent["RECV_USER_CONVERSATION_COUNT_UPDATED"] = "s2c:recv-user-conversation-count-updated";
     ES2CConversationEvent["RECV_CONVERSATION_META"] = "s2c:recv-conversation-meta";
+    ES2CConversationEvent["RECV_VISITOR_UPDATED"] = "s2c:recv-visitor-updated";
 })(ES2CConversationEvent || (exports.ES2CConversationEvent = ES2CConversationEvent = {}));
