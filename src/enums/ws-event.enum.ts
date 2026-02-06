@@ -4,4 +4,3 @@ export enum ES2CWSEvent {
   RECV_USER_STATUS_CHANGED = "s2c:recv-user-status-changed",
   RECV_USER_OFFLINE = "s2c:recv-user-offline",
 }
-

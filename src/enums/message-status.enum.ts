@@ -3,4 +3,3 @@ export enum EMessageStatus {
   SENT = "sent",
   FAILED = "failed",
 }
-

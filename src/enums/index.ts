@@ -7,4 +7,3 @@ export * from "./message-event.enum";
 export * from "./message-status.enum";
 export * from "./telegram-schedule.enum";
 export * from "./ws-event.enum";
-
