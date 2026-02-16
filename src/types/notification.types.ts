@@ -5,7 +5,8 @@ import { ENotificationMessageType } from "../enums/notification-message-type.enu
  */
 export interface INotificationMetadata {
   agentId: string;
-  agentName: string;
+  fullName: string;
+  jobName?: string;
 }
 
 /**
