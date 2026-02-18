@@ -1,6 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ES2CWSEvent = void 0;
+/**
+ * @deprecated Use ES2CEntityEvent.USER_CHANGED + UserAction
+ * and ES2CSystemEvent.ERROR instead.
+ * Sẽ bị xoá hoàn toàn ở version tiếp theo.
+ */
 var ES2CWSEvent;
 (function (ES2CWSEvent) {
     ES2CWSEvent["WS_ERROR_RESPONSE"] = "s2c:ws-error-response";

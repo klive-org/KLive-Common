@@ -18,4 +18,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * Types barrel export
  */
 __exportStar(require("./notification.types"), exports);
+__exportStar(require("./socket-event.types"), exports);
 __exportStar(require("./tenant.types"), exports);
