@@ -1,4 +1,5 @@
 export declare const ROOM_FOR_VIEW_ALL_CONVERSATIONS = "ALL_CONVERSATIONS";
+export declare const ROOM_FOR_CHAT_CONVERSATIONS = "CHAT_CONVERSATIONS";
 export declare const ROOM_SYSTEM_AGENTS_ONLINE = "SYSTEM:agents-online";
 export declare const ROOM_SYSTEM_MONITORING = "SYSTEM:monitoring";
 export declare const ROOM_PREFIX_AGENT = "AGENT:";
