@@ -47,4 +47,5 @@ exports.SYSTEM_ROOMS = {
     AGENTS_ONLINE: "agents-online",
     MONITORING: "monitoring",
     ALL_CONVERSATIONS: "all-conversations",
+    CHAT_CONVERSATIONS: "chat-conversations",
 };

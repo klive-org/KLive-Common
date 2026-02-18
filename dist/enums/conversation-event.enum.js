@@ -8,6 +8,8 @@ var EC2SConversationEvent;
     EC2SConversationEvent["CONVERSATION_LEAVE_ROOM"] = "c2s:conversation-leave-room";
     EC2SConversationEvent["JOIN_ALL_CONVERSATIONS_ROOM"] = "c2s:join-all-conversations-room";
     EC2SConversationEvent["LEAVE_ALL_CONVERSATIONS_ROOM"] = "c2s:leave-all-conversations-room";
+    EC2SConversationEvent["JOIN_CHAT_CONVERSATIONS_ROOM"] = "c2s:join-chat-conversations-room";
+    EC2SConversationEvent["LEAVE_CHAT_CONVERSATIONS_ROOM"] = "c2s:leave-chat-conversations-room";
     EC2SConversationEvent["CONVERSATION_GET_META"] = "c2s:conversation-get-meta";
 })(EC2SConversationEvent || (exports.EC2SConversationEvent = EC2SConversationEvent = {}));
 var ES2CConversationEvent;

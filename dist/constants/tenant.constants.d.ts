@@ -46,4 +46,5 @@ export declare const SYSTEM_ROOMS: {
     readonly AGENTS_ONLINE: "agents-online";
     readonly MONITORING: "monitoring";
     readonly ALL_CONVERSATIONS: "all-conversations";
+    readonly CHAT_CONVERSATIONS: "chat-conversations";
 };

@@ -9,7 +9,7 @@
  * @since Phase 2 - Multi-Tenant Refactoring
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getEffectiveTenantSlug = exports.isRoomBelongsToTenant = exports.parseTenantFromRoom = exports.getTenantBroadcastRoom = exports.getVisitorRoomWithTenant = exports.getConversationRoomWithTenant = exports.getAgentRoomWithTenant = exports.getSystemAllConversationsRoom = exports.getSystemMonitoringRoom = exports.getSystemAgentsOnlineRoom = exports.getTenantRoom = void 0;
+exports.getEffectiveTenantSlug = exports.isRoomBelongsToTenant = exports.parseTenantFromRoom = exports.getTenantBroadcastRoom = exports.getVisitorRoomWithTenant = exports.getConversationRoomWithTenant = exports.getAgentRoomWithTenant = exports.getSystemChatConversationsRoom = exports.getSystemAllConversationsRoom = exports.getSystemMonitoringRoom = exports.getSystemAgentsOnlineRoom = exports.getTenantRoom = void 0;
 const tenant_constants_1 = require("../constants/tenant.constants");
 /**
  * Create a tenant-prefixed room name
@@ -57,6 +57,17 @@ const getSystemAllConversationsRoom = (tenantSlug) => {
     return (0, exports.getTenantRoom)(tenantSlug, tenant_constants_1.TENANT_ROOM_TYPES.SYSTEM, tenant_constants_1.SYSTEM_ROOMS.ALL_CONVERSATIONS);
 };
 exports.getSystemAllConversationsRoom = getSystemAllConversationsRoom;
+/**
+ * Get the chat-conversations room for a tenant
+ * Used by agents on the chat page to sync their in-progress conversation list
+ *
+ * @param tenantSlug - Tenant slug
+ * @returns Room name: "{tenant}:SYSTEM:chat-conversations"
+ */
+const getSystemChatConversationsRoom = (tenantSlug) => {
+    return (0, exports.getTenantRoom)(tenantSlug, tenant_constants_1.TENANT_ROOM_TYPES.SYSTEM, tenant_constants_1.SYSTEM_ROOMS.CHAT_CONVERSATIONS);
+};
+exports.getSystemChatConversationsRoom = getSystemChatConversationsRoom;
 /**
  * Get the agent-specific room with tenant prefix
  *

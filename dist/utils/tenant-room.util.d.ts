@@ -43,6 +43,14 @@ export declare const getSystemMonitoringRoom: (tenantSlug: string) => string;
  */
 export declare const getSystemAllConversationsRoom: (tenantSlug: string) => string;
 /**
+ * Get the chat-conversations room for a tenant
+ * Used by agents on the chat page to sync their in-progress conversation list
+ *
+ * @param tenantSlug - Tenant slug
+ * @returns Room name: "{tenant}:SYSTEM:chat-conversations"
+ */
+export declare const getSystemChatConversationsRoom: (tenantSlug: string) => string;
+/**
  * Get the agent-specific room with tenant prefix
  *
  * @param tenantSlug - Tenant slug
