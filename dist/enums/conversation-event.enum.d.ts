@@ -1,6 +1,7 @@
 /**
- * @deprecated Use ES2CEntityEvent.CONVERSATION_CHANGED + ConversationAction instead.
- * Sẽ bị xoá hoàn toàn ở version tiếp theo.
+ * Client-to-Server Conversation Events (C2S)
+ * Client emit các event này lên server để thực hiện các hành động liên quan đến conversation.
+ * Backend listen qua @SubscribeMessage decorator.
  */
 export declare enum EC2SConversationEvent {
     CONVERSATION_BUMP_READ = "c2s:conversation-bump-read",

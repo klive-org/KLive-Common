@@ -2,8 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ES2CConversationEvent = exports.EC2SConversationEvent = void 0;
 /**
- * @deprecated Use ES2CEntityEvent.CONVERSATION_CHANGED + ConversationAction instead.
- * Sẽ bị xoá hoàn toàn ở version tiếp theo.
+ * Client-to-Server Conversation Events (C2S)
+ * Client emit các event này lên server để thực hiện các hành động liên quan đến conversation.
+ * Backend listen qua @SubscribeMessage decorator.
  */
 var EC2SConversationEvent;
 (function (EC2SConversationEvent) {
