@@ -32,6 +32,8 @@ export enum ES2CSystemEvent {
   CONVERSATION_META = "s2c:conversation-meta",
   /** Rooms list update — debug/internal */
   ROOMS_LIST = "s2c:rooms-list",
+  /** Conversation status counts update — broadcast to all agents */
+  STATUS_COUNTS = "s2c:status-counts",
   /** WebSocket error response */
   ERROR = "s2c:error",
 }
