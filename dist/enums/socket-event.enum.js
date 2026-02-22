@@ -33,6 +33,8 @@ var ES2CSystemEvent;
     ES2CSystemEvent["CONVERSATION_META"] = "s2c:conversation-meta";
     /** Rooms list update — debug/internal */
     ES2CSystemEvent["ROOMS_LIST"] = "s2c:rooms-list";
+    /** Conversation status counts update — broadcast to all agents */
+    ES2CSystemEvent["STATUS_COUNTS"] = "s2c:status-counts";
     /** WebSocket error response */
     ES2CSystemEvent["ERROR"] = "s2c:error";
 })(ES2CSystemEvent || (exports.ES2CSystemEvent = ES2CSystemEvent = {}));
