@@ -20,6 +20,18 @@ export interface IConversationClosedMetadata {
 }
 
 /**
+ * Metadata cho conversation transferred notification message
+ * Dùng để hiển thị ai transfer cho ai + lý do trên dashboard
+ */
+export interface IConversationTransferredMetadata {
+  fromAgentId: string;
+  fromAgentName: string;
+  toAgentId: string;
+  toAgentName: string;
+  reason?: string;
+}
+
+/**
  * @deprecated Dùng IAgentNotificationMetadata thay thế. Giữ lại để backward compatibility.
  */
 export type INotificationMetadata = IAgentNotificationMetadata;
@@ -30,5 +42,5 @@ export type INotificationMetadata = IAgentNotificationMetadata;
  */
 export interface INotificationContent {
   type: ENotificationMessageType;
-  metadata?: IAgentNotificationMetadata | IConversationClosedMetadata;
+  metadata?: IAgentNotificationMetadata | IConversationClosedMetadata | IConversationTransferredMetadata;
 }

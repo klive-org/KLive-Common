@@ -7,4 +7,5 @@ export enum ENotificationMessageType {
   AGENT_OBSERVING = "agent_observing",
   AGENT_LEFT = "agent_left",
   CONVERSATION_CLOSED = "conversation_closed",
+  CONVERSATION_TRANSFERRED = "conversation_transferred",
 }

@@ -11,4 +11,5 @@ var ENotificationMessageType;
     ENotificationMessageType["AGENT_OBSERVING"] = "agent_observing";
     ENotificationMessageType["AGENT_LEFT"] = "agent_left";
     ENotificationMessageType["CONVERSATION_CLOSED"] = "conversation_closed";
+    ENotificationMessageType["CONVERSATION_TRANSFERRED"] = "conversation_transferred";
 })(ENotificationMessageType || (exports.ENotificationMessageType = ENotificationMessageType = {}));
