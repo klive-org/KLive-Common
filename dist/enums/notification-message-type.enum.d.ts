@@ -5,5 +5,6 @@
 export declare enum ENotificationMessageType {
     AGENT_JOINED = "agent_joined",
     AGENT_OBSERVING = "agent_observing",
-    AGENT_LEFT = "agent_left"
+    AGENT_LEFT = "agent_left",
+    CONVERSATION_CLOSED = "conversation_closed"
 }
