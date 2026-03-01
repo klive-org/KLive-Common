@@ -16,6 +16,7 @@ export interface IAgentNotificationMetadata {
 export interface IConversationClosedMetadata {
   endedByType: "agent" | "visitor" | "system";
   endedByName?: string;
+  endedByJobName?: string;
   endReason?: string;
 }
 
@@ -26,8 +27,10 @@ export interface IConversationClosedMetadata {
 export interface IConversationTransferredMetadata {
   fromAgentId: string;
   fromAgentName: string;
+  fromAgentJobName?: string;
   toAgentId: string;
   toAgentName: string;
+  toAgentJobName?: string;
   reason?: string;
 }
 
