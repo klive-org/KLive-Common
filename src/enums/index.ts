@@ -8,4 +8,5 @@ export * from "./message-status.enum";
 export * from "./notification-message-type.enum";
 export * from "./socket-event.enum";
 export * from "./telegram-schedule.enum";
+export * from "./user-type.enum";
 export * from "./ws-event.enum";
