@@ -9,6 +9,7 @@ export declare enum ConversationLogAction {
     CONVERSATION_ENDED_BY_VISITOR = "conversation-ended-by-visitor",
     CONVERSATION_CLOSED_AUTOMATICALLY = "conversation-closed-automatically",
     CONVERSATION_TRANSFERRED_TO_OTHER_AGENT = "conversation-transferred-to-other-agent",
+    CONVERSATION_TRANSFERRED_TO_QUEUE = "conversation-transferred-to-queue",
     CONVERSATION_AGENT_JOIN_ROOM = "conversation-agent-join-room",
     CONVERSATION_AGENT_LEAVE_ROOM = "conversation-agent-leave-room",
     CONVERSATION_AGENT_OBSERVE_CONVERSATION = "conversation-agent-observe-conversation"
