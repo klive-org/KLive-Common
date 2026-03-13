@@ -90,6 +90,7 @@ export interface ITypingIndicatorPayload {
   action: TypingAction;
   conversationId: string;
   userId: string;
+  isPrivate?: boolean;
 }
 
 /**
