@@ -8,7 +8,9 @@
 export declare enum EUserStatus {
     BUSY = "busy",
     AWAY = "away",
-    AVAILABLE = "available"
+    NOT_AVAILABLE = "busy",
+    AVAILABLE = "available",
+    STANDBY = "standby"
 }
 /**
  * Trạng thái hiển thị mở rộng — bao gồm derived states.
@@ -20,8 +22,10 @@ export declare enum EUserStatus {
  */
 export declare enum EUserDisplayStatus {
     BUSY = "busy",
+    NOT_AVAILABLE = "busy",
     AWAY = "away",
     AVAILABLE = "available",
     OFFLINE = "offline",
-    ONLINE = "online"
+    ONLINE = "online",
+    STANDBY = "standby"
 }

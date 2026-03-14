@@ -12,7 +12,9 @@ var EUserStatus;
 (function (EUserStatus) {
     EUserStatus["BUSY"] = "busy";
     EUserStatus["AWAY"] = "away";
+    EUserStatus["NOT_AVAILABLE"] = "busy";
     EUserStatus["AVAILABLE"] = "available";
+    EUserStatus["STANDBY"] = "standby";
 })(EUserStatus || (exports.EUserStatus = EUserStatus = {}));
 /**
  * Trạng thái hiển thị mở rộng — bao gồm derived states.
@@ -25,8 +27,10 @@ var EUserStatus;
 var EUserDisplayStatus;
 (function (EUserDisplayStatus) {
     EUserDisplayStatus["BUSY"] = "busy";
+    EUserDisplayStatus["NOT_AVAILABLE"] = "busy";
     EUserDisplayStatus["AWAY"] = "away";
     EUserDisplayStatus["AVAILABLE"] = "available";
     EUserDisplayStatus["OFFLINE"] = "offline";
     EUserDisplayStatus["ONLINE"] = "online";
+    EUserDisplayStatus["STANDBY"] = "standby";
 })(EUserDisplayStatus || (exports.EUserDisplayStatus = EUserDisplayStatus = {}));
