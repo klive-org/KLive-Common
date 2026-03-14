@@ -25,4 +25,5 @@ __exportStar(require("./notification-message-type.enum"), exports);
 __exportStar(require("./socket-event.enum"), exports);
 __exportStar(require("./telegram-schedule.enum"), exports);
 __exportStar(require("./user-type.enum"), exports);
+__exportStar(require("./user-status.enum"), exports);
 __exportStar(require("./ws-event.enum"), exports);
