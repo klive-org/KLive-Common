@@ -8,7 +8,9 @@
 export enum EUserStatus {
   BUSY = "busy",
   AWAY = "away",
+  NOT_AVAILABLE = "busy",
   AVAILABLE = "available",
+  STANDBY = "standby",
 }
 
 /**
@@ -21,8 +23,10 @@ export enum EUserStatus {
  */
 export enum EUserDisplayStatus {
   BUSY = "busy",
+  NOT_AVAILABLE = "busy",
   AWAY = "away",
   AVAILABLE = "available",
   OFFLINE = "offline",
   ONLINE = "online",
+  STANDBY = "standby",
 }
