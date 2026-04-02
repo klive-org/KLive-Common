@@ -17,4 +17,6 @@ var ConversationLogAction;
     ConversationLogAction["CONVERSATION_AGENT_JOIN_ROOM"] = "conversation-agent-join-room";
     ConversationLogAction["CONVERSATION_AGENT_LEAVE_ROOM"] = "conversation-agent-leave-room";
     ConversationLogAction["CONVERSATION_AGENT_OBSERVE_CONVERSATION"] = "conversation-agent-observe-conversation";
+    ConversationLogAction["CONVERSATION_AGENT_SEND_MESSAGE"] = "conversation-agent-send-message";
+    ConversationLogAction["CONVERSATION_VISITOR_SEND_MESSAGE"] = "conversation-visitor-send-message";
 })(ConversationLogAction || (exports.ConversationLogAction = ConversationLogAction = {}));
