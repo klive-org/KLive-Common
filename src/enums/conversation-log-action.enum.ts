@@ -13,4 +13,6 @@ export enum ConversationLogAction {
   CONVERSATION_AGENT_JOIN_ROOM = "conversation-agent-join-room",
   CONVERSATION_AGENT_LEAVE_ROOM = "conversation-agent-leave-room",
   CONVERSATION_AGENT_OBSERVE_CONVERSATION = "conversation-agent-observe-conversation",
+  CONVERSATION_AGENT_SEND_MESSAGE = "conversation-agent-send-message",
+  CONVERSATION_VISITOR_SEND_MESSAGE = "conversation-visitor-send-message",
 }
