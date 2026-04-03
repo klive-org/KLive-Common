@@ -5,6 +5,7 @@ export declare enum ConversationLogAction {
     CONVERSATION_SELF_ASSIGNED = "conversation-self-assigned",
     CONVERSATION_AUTO_ASSIGNED = "conversation-auto-assigned",
     CONVERSATION_MISSED = "conversation-missed",
+    CONVERSATION_MISSED_ASSIGNMENT = "conversation-missed-assignment",
     CONVERSATION_ENDED_BY_AGENT = "conversation-ended-by-agent",
     CONVERSATION_ENDED_BY_VISITOR = "conversation-ended-by-visitor",
     CONVERSATION_CLOSED_AUTOMATICALLY = "conversation-closed-automatically",

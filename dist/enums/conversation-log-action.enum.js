@@ -9,6 +9,7 @@ var ConversationLogAction;
     ConversationLogAction["CONVERSATION_SELF_ASSIGNED"] = "conversation-self-assigned";
     ConversationLogAction["CONVERSATION_AUTO_ASSIGNED"] = "conversation-auto-assigned";
     ConversationLogAction["CONVERSATION_MISSED"] = "conversation-missed";
+    ConversationLogAction["CONVERSATION_MISSED_ASSIGNMENT"] = "conversation-missed-assignment";
     ConversationLogAction["CONVERSATION_ENDED_BY_AGENT"] = "conversation-ended-by-agent";
     ConversationLogAction["CONVERSATION_ENDED_BY_VISITOR"] = "conversation-ended-by-visitor";
     ConversationLogAction["CONVERSATION_CLOSED_AUTOMATICALLY"] = "conversation-closed-automatically";
