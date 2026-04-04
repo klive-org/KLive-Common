@@ -1,3 +1,4 @@
+export * from "./agent-report-field.enum";
 export * from "./agent-type.enum";
 export * from "./conversation-end-status.enum";
 export * from "./conversation-event.enum";
@@ -8,6 +9,6 @@ export * from "./message-status.enum";
 export * from "./notification-message-type.enum";
 export * from "./socket-event.enum";
 export * from "./telegram-schedule.enum";
-export * from "./user-type.enum";
 export * from "./user-status.enum";
+export * from "./user-type.enum";
 export * from "./ws-event.enum";
