@@ -20,3 +20,4 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./notification.types"), exports);
 __exportStar(require("./socket-event.types"), exports);
 __exportStar(require("./tenant.types"), exports);
+__exportStar(require("./conversation-log-data.types"), exports);
