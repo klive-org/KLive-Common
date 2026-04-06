@@ -29,6 +29,10 @@ export interface IConversationTransferredMetadata {
     toAgentName: string;
     toAgentJobName?: string;
     reason?: string;
+    /** Người thực hiện chuyển (manager/admin). Nếu undefined hoặc === fromAgentId → agent tự transfer */
+    initiatorId?: string;
+    initiatorName?: string;
+    initiatorJobName?: string;
 }
 /**
  * @deprecated Dùng IAgentNotificationMetadata thay thế. Giữ lại để backward compatibility.
