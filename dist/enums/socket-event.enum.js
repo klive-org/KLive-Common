@@ -37,4 +37,6 @@ var ES2CSystemEvent;
     ES2CSystemEvent["STATUS_COUNTS"] = "s2c:status-counts";
     /** WebSocket error response */
     ES2CSystemEvent["ERROR"] = "s2c:error";
+    /** AI Agent activity status (thinking, checking, processing, idle) — ephemeral */
+    ES2CSystemEvent["AI_ACTIVITY_STATUS"] = "s2c:ai-activity-status";
 })(ES2CSystemEvent || (exports.ES2CSystemEvent = ES2CSystemEvent = {}));
