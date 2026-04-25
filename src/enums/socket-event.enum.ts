@@ -36,4 +36,6 @@ export enum ES2CSystemEvent {
   STATUS_COUNTS = "s2c:status-counts",
   /** WebSocket error response */
   ERROR = "s2c:error",
+  /** AI Agent activity status (thinking, checking, processing, idle) — ephemeral */
+  AI_ACTIVITY_STATUS = "s2c:ai-activity-status",
 }

@@ -105,3 +105,16 @@ export interface IBadgeCountPayload {
 export interface IRoomsListPayload {
   rooms: string[];
 }
+
+/**
+ * Payload for ES2CSystemEvent.AI_ACTIVITY_STATUS
+ * Sent when AI Agent starts/stops processing (thinking, checking, etc.)
+ */
+export interface IAIActivityStatusPayload {
+  action: "start" | "stop";
+  conversationId: string;
+  status: "thinking" | "checking" | "processing" | "idle";
+  phase?: "intent_detection" | "response_generation";
+  toolName?: string;
+  startedAt?: number; // Unix ms, only for 'start' action
+}
